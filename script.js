@@ -33,9 +33,9 @@ biggerBtn.addEventListener("click", function () {
   if (currentNumber > nextNumber) {
     nextNum.innerHTML = parseInt(nextNumber);
     nextLabel.style.backgroundColor = "green";
-    streak++;
     if (clicked === false) {
       scoreLabel.innerHTML = parseInt((scoreNumber += 5));
+      streak++;
       clicked = true;
     }
   } else {
@@ -58,9 +58,9 @@ smallerBtn.addEventListener("click", function () {
   if (currentNumber < nextNumber) {
     nextNum.innerHTML = parseInt(nextNumber);
     nextLabel.style.backgroundColor = "green";
-    streak++;
     if (clicked === false) {
       scoreLabel.innerHTML = parseInt((scoreNumber += 5));
+      streak++;
       clicked = true;
     }
   } else {
@@ -83,9 +83,9 @@ equalBtn.addEventListener("click", function () {
   if (currentNumber === nextNumber) {
     nextNum.innerHTML = parseInt(nextNumber);
     nextLabel.style.backgroundColor = "green";
-    streak++;
     if (clicked === false) {
       scoreLabel.innerHTML = parseInt((scoreNumber += 10));
+      streak++;
       clicked = true;
     }
   } else {
