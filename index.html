@@ -13,53 +13,24 @@
     </div>
 
     <!-- pc container -->
-    <div class="card borderDown flex between">
+    <div class="card borderDown flex row between">
       <div class="numberContainer" id="currentLabel">
         <h3 class="label">Current</h3>
         <div class="numberCard" id="currentNum">0</div>
       </div>
-      <div class="buttons flex column">
-        <h4 class="health">health: <span id="healthLabel">3</span></h4>
-        <h4 class="score">Score: <span id="scoreLabel">0</span></h4>
-        <button class="borderUp" type="button" id="bigger" name="bigger">bigger than</button>
-        <button type="button" id="smaller" name="smaller">smaller than</button>
-        <button class="borderDown" type="button" id="equal" name="equal">equal with</button>
-        <button class="borderUp" type="button" id="next" name="next" style="margin-top: 10px">next</button>
-        <button class="borderDown" type="button" id="reset" name="reset">reset</button>
-      </div>
-      <div class="numberContainer" id="nextLabel">
-        <h3 class="label">Next</h3>
-        <div class="numberCard" id="nextNum">?</div>
-      </div>
-    </div>
-
-    <!-- mobile container -->
-    <div class="mobileCard borderUp">
-      <h2 class="title">Guess the Number</h2>
-    </div>
-    <div class="mobileCard borderDown">
-      <div class="numberContainer" id="currentLabel">
-        <h3 class="label">Current</h3>
-        <div class="numberCard" id="currentNum">0</div>
-      </div>
-      <div class="buttons flex column">
-        <div style="margin-bottom: 5px">
+      <div class="buttons flex columnBtn">
+        <div>
           <h4 class="health">health: <span id="healthLabel">3</span></h4>
           <h4 class="score">Score: <span id="scoreLabel">0</span></h4>
         </div>
-        <div class="flex" id="operator-container-text">
-          <button class="borderLeft" type="button" id="bigger" name="bigger">bigger than</button>
+        <div class="flex column buttonGap">
+          <button class="btnBorderOne" type="button" id="bigger" name="bigger">bigger than</button>
           <button type="button" id="smaller" name="smaller">smaller than</button>
-          <button class="borderRight" type="button" id="equal" name="equal">equal with</button>
+          <button class="btnBorderTwo" type="button" id="equal" name="equal">equal with</button>
         </div>
-        <div class="flex" id="operator-container-symbol">
-          <button class="borderLeft" type="button" id="bigger" name="bigger">></button>
-          <button type="button" id="smaller" name="smaller"><</button>
-          <button class="borderRight" type="button" id="equal" name="equal">=</button>
-        </div>
-        <div class="flex" style="margin-top: 5px">
-          <button class="borderLeft" type="button" id="next" name="next">next</button>
-          <button class="borderRight" type="button" id="reset" name="reset">reset</button>
+        <div class="flex column buttonGap">
+          <button class="btnBorderOne" type="button" id="next" name="next">next</button>
+          <button class="btnBorderTwo" type="button" id="reset" name="reset">reset</button>
         </div>
       </div>
       <div class="numberContainer" id="nextLabel">
