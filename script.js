@@ -125,28 +125,30 @@ nextBtn.addEventListener("click", function () {
 });
 
 resetBtn.addEventListener("click", function () {
-  nextLabel.style.backgroundColor = "whitesmoke";
+  if (confirm("You're about to reset the game!") === true) {
+    nextLabel.style.backgroundColor = "whitesmoke";
 
-  currentNumber = Math.floor(Math.random() * 11);
-  currentNum.innerHTML = parseInt(currentNumber);
+    currentNumber = Math.floor(Math.random() * 11);
+    currentNum.innerHTML = parseInt(currentNumber);
 
-  nextNumber = Math.floor(Math.random() * 11);
-  nextNum.innerHTML = "?";
+    nextNumber = Math.floor(Math.random() * 11);
+    nextNum.innerHTML = "?";
 
-  scoreNumber = 0;
-  scoreLabel.innerHTML = parseInt(scoreNumber);
+    scoreNumber = 0;
+    scoreLabel.innerHTML = parseInt(scoreNumber);
 
-  healthNumber = 3;
-  healthLabel.innerHTML = parseInt(healthNumber);
+    healthNumber = 3;
+    healthLabel.innerHTML = parseInt(healthNumber);
 
-  scoreNumber = 0;
-  scoreLabel.innerHTML = parseInt(scoreNumber);
+    scoreNumber = 0;
+    scoreLabel.innerHTML = parseInt(scoreNumber);
 
-  clicked = false;
-  biggerBtn.disabled = false;
-  smallerBtn.disabled = false;
-  equalBtn.disabled = false;
-  nextBtn.disabled = true;
+    clicked = false;
+    biggerBtn.disabled = false;
+    smallerBtn.disabled = false;
+    equalBtn.disabled = false;
+    nextBtn.disabled = true;
+  }
 });
 
 // function
